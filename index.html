@@ -205,6 +205,26 @@ table, th, td {
   <center><div class="animated flip"><p class="output"><Author:"AlexanderEric">Sila Cuba Lagi kelak</p></center>
   <center><p class="output"><author: "Alexander Eric">Sila cuba kembali ke <a href="https://www.google.com/"><font color="white" Console="$AllowOnClick.goto" onClick.goto="true" a:link="true" author="Alexander Eric">laman Google</a></p></center>
     <center><p class="output"><Author:"Alexander Eric">Harap maaf</p></center></div>
+     <center>
+<div onClick="typeWriter()">Click here for info</div>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = '404 code was found. Please return back. The Web Is Under Maintenance by Alexander Eric.'
+var speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+</center>
+    <td>
     </tr>
     </table>
     </center>
