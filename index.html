@@ -3,6 +3,7 @@
 <title>INDEX</title>
   <meta name="Author" Author="Alexander Eric" Content="Description" Description="Web for Maintenance">
   <link rel="stylesheet" href="https://www.cssportal.com/animate-css/animate.css">
+  <link rel="stylesheet" href="@-webkit-keyframes flash">
 <head>
 <style>
 @import 'https://fonts.googleapis.com/css?family=Inconsolata';
@@ -101,7 +102,7 @@ body {
   content: "> ";
 }
 
-/*
+/* Modified By Alexander Eric
 .input {
   color: rgba(192, 255, 192, 0.8);
   text-shadow:
@@ -112,7 +113,7 @@ body {
 .input::before {
   content: "$ ";
 }
-*/
+*/Modified by Alexander Eric
 
 a {
   color: #fff;
@@ -129,12 +130,44 @@ a::after {
 
 .errorcode {
   color: white;
+  animation-iteration-count: infinite
 }
+@-webkit-keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+.animate__flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+  animation-iteration-count: 2;
+
+}
+/* modified by Alexander Eric
 </style>
 </head>
 <body>
 <center>
-  <h><font color="white">div class="animated flash"><marquee>[Announcement for year 2020]MALAYSIA PRIME MINISTER: TAN SRI MUHYIDDIN YASSIN | SARAWAK PRIME MINISTER: TAN SRI ABANG JOHARI ABANG OPENG | SABAH PRIME MINISTER: (PRU AKAN MASIH DIJALANKAN) </marquee></font></h>
+  <h><font color="white"><div class="flash"><marquee>[Announcement for year 2020]MALAYSIA PRIME MINISTER: TAN SRI MUHYIDDIN YASSIN | SARAWAK PRIME MINISTER: TAN SRI ABANG JOHARI ABANG OPENG | SABAH PRIME MINISTER: (PRU AKAN MASIH DIJALANKAN) </marquee></font></h>
 <h1><font color="white"><div class="animated flip"><img src="http://bestanimations.com/Earth&Space/Earth/Earth-01-june.gif" width="70" height="70"> <font>MALAYSIA'S PRIME MINISTERS</font></h1>
 <tr>
 <div class="noise"></div>
@@ -157,7 +190,7 @@ table, th, td {
  <center><div class="terminal"></center>
  <center><font color="white"><h><div class="animated flip">KESILAPAN PADA WEB YANG ANDA LAYARI SEDANG DIPERBAIKI</h></center>
   <center><div class="animated flip"><p class="output">Sila Cuba Lagi kelak</p></center>
-  <center><p class="output">Sila cuba kembali ke <a href="https://www.google.com/">laman Google</a></p></center>
+  <center><p class="output">Sila cuba kembali ke <a href="https://www.google.com/"><font color="white" onclick.active="true" onClick.goto="true">laman Google</a></p></center>
     <center><p class="output">Harap maaf</p></center></div>
     </center>
     </td>
@@ -169,6 +202,7 @@ table, th, td {
     </center>
   </body>
   <footer>
+<center><h><div class="animated flash">ERROR C0DE</div></h></center>
    <center><font color="white"><h><div class="animated lightSpeedIn">Copyright design by: <font color="yellow">ALEXANDER ERIC </font></h></center>
      </footer>
 </html>
